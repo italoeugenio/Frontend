@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style type="text/css">
+      div h1 {
+        color: blue;
+      }
+
+      .branding {
+        color: red;
+      }
+
+      .blog-post-title {
+        color: limegreen;
+      }
+      .title {
+        color: red;
+      }
+
+      .title {
+        color: green;
+      }
+
+      .main-brand-2 {
+        border: 1px solid black;
+        color: red;
+      }
+
+      .title-2 {
+        color: green;
+      }
+
+      .main-brand-3.title-3 {
+        color: red;
+      }
+
+      .title-3 {
+        color: green;
+      }
+      .title-4 {
+        color: orange;
+      }
+
+      h1 {
+        color: green;
+      }
+      h1.main-brand-5 {
+        color: red;
+      }
+
+      .main-brand-5.title-5 {
+        color: orange;
+      }
+
+      .main-brand-5 {
+        color: green;
+      }
+
+      #site-brand {
+        color: red;
+      }
+
+      h1.nav-head.nav-main.other-useful-class {
+        /*
+     * this class is way too specific; never have a class selector so long
+     * it's ridiculous and just to illustrate a point
+     */
+        color: green;
+      }
+
+      #site-brand-2 {
+        color: red;
+        border: 1px solid red;
+      }
+
+      .nav-head-2 {
+        color: green !important;
+        border: 1px solid green;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>This is an h1.</h1>
+
+    <div>
+      <h1>A h1</h1>
+    </div>
+
+    <h1 class="branding">My Super Cool Brand</h1>
+    <!-- other htmls … these don't have to be sibiling tags -->
+    <h1 class="blog-post-title">My Cool Blog Post</h1>
+
+    <h1 class="title">Cool Title</h1>
+    <h1 class="title-2 main-brand-2">Branding here</h1>
+    <h1 class="title-3 main-brand-3">Branding here</h1>
+    <h1 class="title-4">Another h1</h1>
+    <h1 class="title-5 main-brand-5">Another Example</h1>
+    <h1 id="site-brand" class="nav-head nav-main other-useful-class">
+      The Brand of my Website
+    </h1>
+    <h1 id="site-brand-2" class="nav-head-2 nav-main-2 other-useful-class-2">
+      The Brand of my Website
+    </h1>
+  </body>
+</html>
