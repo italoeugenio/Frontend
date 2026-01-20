@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Model</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      .ex-box {
+        border: 3px solid #aaa;
+        background-color: #eee;
+        height: 200px;
+        width: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        float: left;
+        margin-right: 10px;
+        border-radius: 5px;
+        font-size: 30px;
+      }
+
+      .ex-box:last-of-type {
+        clear: right;
+      }
+
+      .box {
+        display: flex;
+        width: 400px;
+        height: 400px;
+        border: dotted 5px rgba(3, 102, 202, 0.7);
+        margin: 0 auto;
+        padding-left: 20px;
+      }
+
+      .example {
+        border: 3px solid red;
+        padding: 20px;
+        margin: 250px;
+        background-color: lightblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="ex-box">Box 1</div>
+    <div class="ex-box">Box 2</div>
+    <div class="box">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit expedita
+      voluptates quidem, nostrum ea dolores reprehenderit dolore id incidunt,
+      itaque, cum eum cumque dolorum nihil sed suscipit ipsa pariatur vitae.
+    </div>
+    <div class="example">Interior Content</div>
+  </body>
+</html>

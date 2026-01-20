@@ -80,6 +80,70 @@
         color: green !important;
         border: 1px solid green;
       }
+
+      .hover-example {
+        background-color: green;
+        width: 150px;
+        height: 150px;
+      }
+
+      .hover-example:hover {
+        background-color: crimson;
+        width: 150px;
+        height: 150px;
+        transition: 1s;
+      }
+
+      .first-child-example {
+        color: crimson;
+        border-bottom: 1px solid black;
+        padding-bottom: 20px;
+      }
+
+      .first-child-example:first-child {
+        color: limegreen;
+      }
+
+      .chapter {
+        margin: 0;
+      }
+
+      .chapter::after {
+        content: "❦";
+        font-size: 50px;
+        text-align: center;
+        display: block;
+      }
+
+      /* CSS */
+      .botao-interativo {
+        background-color: #007bff; /* Azul */
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        /* Para suavizar a mudança */
+      }
+
+      /* AQUI ESTÁ A PSEUDO-CLASS */
+      /* Ela entra em ação apenas quando o estado é "hover" */
+      .botao-interativo:hover {
+        transition: 0.3s;
+        background-color: #0056b3; /* Azul mais escuro */
+        transform: scale(1.1); /* Aumenta um pouco */
+      }
+
+      .alerta {
+        font-family: sans-serif;
+        color: #333;
+      }
+
+      /* AQUI ESTÁ O PSEUDO-ELEMENT */
+      /* Ele cria um elemento "falso" antes do conteúdo da tag <p> */
+      .alerta::before {
+        content: "⚠️ "; /* O conteúdo que será inserido */
+        font-size: 1.2em;
+      }
     </style>
   </head>
   <body>
@@ -104,5 +168,21 @@
     <h1 id="site-brand-2" class="nav-head-2 nav-main-2 other-useful-class-2">
       The Brand of my Website
     </h1>
+
+    <div class="hover-example">Hover your mouse over me</div>
+
+    <ol>
+      <li class="first-child-example">First</li>
+      <li class="first-child-example">Second</li>
+      <li class="first-child-example">Third</li>
+    </ol>
+    <p class="alerta">Este é um aviso importante.</p>
+
+    <div class="chapter">This is a chapter of my book</div>
+    <div class="chapter">This is a second chapter of my book</div>
+
+    <button class="botao-interativo">Passe o mouse em mim</button>
+
+    <p class="alerta">Este é um aviso importante.</p>
   </body>
 </html>
