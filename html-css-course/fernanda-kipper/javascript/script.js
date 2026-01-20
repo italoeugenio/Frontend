@@ -58,6 +58,38 @@ for(var i = 0; i < 5; i++){
     console.log(i)
 }
 
+for(var i = 0; i < 5; i++){
+    var nomeVar = "Joao"
+    let nomeLet = "Fernanda" //vai existir apenas dentro do bloco
+    console.log(i)
+}
+
 console.log("Nome declarado com var: " + nomeVar)
 console.log("Valor de i após o loop: " + i)
 
+let count1 = 0
+let count2 = 5
+count1++
+count2--
+
+console.log("É igual?: ", 1 == '1') //compara valor
+console.log("É estritamente igual?: ", 1 === '1') //compara valor e tipo
+console.log("É diferente?: ", 1 != '1')
+console.log("É estritamente diferente?: ", 1 !== '1')
+
+console.log("é igual:", 1 == "1" ? "igual" : "diferente")
+
+let idadeDoItalo =  50
+console.log(idadeDoItalo)
+
+
+switch(idadeDoItalo){
+    case 10:
+        console.log("idade é 10")
+        break
+    case 20:
+        console.log("idade é 20")
+        break
+    default:
+        console.log("idade é outra")        
+}
