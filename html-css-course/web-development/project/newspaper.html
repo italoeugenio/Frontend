@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Newspaper Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .main-title {
+        text-align: center;
+        font-size: 50px;
+        font-weight: bold;
+      }
+
+      .topics {
+        direction: flex;
+        border: 1px solid black;
+        height: 40px;
+        margin: 20px;
+      }
+
+      .nav-bar {
+        margin-top: 20px;
+        border: 1px solid black;
+        margin-left: 50px;
+        margin-right: 50px;
+        display: flex;
+        justify-content: space-between;
+        background-color: lightgray;
+        font-family: "Open Sans", sans-serif;
+      }
+
+      .item {
+        padding: 20px;
+        font-weight: bold;
+      }
+
+      .line-1 {
+        display: flex;
+        border: 1px solid black;
+      }
+
+      .content-news {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="main-title">The new Times</header>
+
+    <div class="content">
+      <div class="nav-bar">
+        <div class="item">Politics</div>
+        <div class="item">Technology</div>
+        <div class="item">Local</div>
+        <div class="item">Opinion</div>
+        <div class="item">Sports</div>
+      </div>
+      <div class="line-1">
+        Student Learns HTML
+        <div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sint
+          fugit ab harum labore aliquid officiis quasi, repellat commodi dicta?
+          Odit corporis asperiores sunt quisquam enim deleniti minima delectus
+          ipsa.
+        </div>
+      </div>
+      <p></p>
+      <div class="content-news">
+        <div class="line-2">BREAKING: Luna is Adorable</div>
+        <div class="line-3">CSS Is Apparently a Thing</div>
+      </div>
+    </div>
+  </body>
+</html>
