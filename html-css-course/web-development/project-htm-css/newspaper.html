@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Newspaper Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Open Sans", sans-serif;
+      }
+      .content {
+        margin-left: 50px;
+        margin-right: 50px;
+      }
+
+      .main-title {
+        text-align: center;
+        font-size: 50px;
+        font-weight: bold;
+      }
+
+      .nav-bar {
+        margin-top: 20px;
+        border: 1px solid black;
+        display: flex;
+        justify-content: space-between;
+        background-color: lightgray;
+        font-family: "Open Sans", sans-serif;
+      }
+
+      .item {
+        padding: 20px;
+        font-weight: bold;
+      }
+
+      .content-news {
+        border: solid black 1px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1px;
+        padding: 20px;
+      }
+
+      .card {
+        border: 1px solid black;
+        height: 200px;
+        width: calc((100% - 2px) / 3);
+      }
+
+      .html-title {
+        text-align: center;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="main-title">The new Times</header>
+
+    <div class="content">
+      <div class="nav-bar">
+        <div class="item">Politics</div>
+        <div class="item">Technology</div>
+        <div class="item">Local</div>
+        <div class="item">Opinion</div>
+        <div class="item">Sports</div>
+      </div>
+      <div class="content-news">
+  <div class="card">
+    <h2 class="html-title">Student Learns HTML</h2>
+    <p>
+      In a stunning turn of events, a local student has mastered the art
+      of HTML coding, paving the way for a future in web development.
+    </p>
+  </div>
+  <div class="card">
+    <h2 class="html-title">City Council Approves New Park</h2>
+    <p>
+      The city council has approved plans for a new park downtown, promising
+      green spaces and recreational areas for all residents.
+    </p>
+  </div>
+  <div class="card">
+    <h2 class="html-title">Tech Startup Launches App</h2>
+    <p>
+      A local tech startup has launched a new app aimed at simplifying daily
+      tasks, attracting attention from investors nationwide.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2 class="html-title">Community Garden Flourishes</h2>
+    <p>
+      Volunteers have transformed an empty lot into a thriving community
+      garden, providing fresh produce to local families.
+    </p>
+  </div>
+  <div class="card">
+    <h2 class="html-title">Opinion: The Future of Education</h2>
+    <p>
+      Experts weigh in on how technology and innovation will reshape
+      classrooms and learning experiences in the coming decade.
+    </p>
+  </div>
+  <div class="card">
+    <h2 class="html-title">Local Team Wins Championship</h2>
+    <p>
+      Fans celebrate as the hometown team clinches the regional
+      championship in a thrilling final match.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2 class="html-title">New Library Opens Downtown</h2>
+    <p>
+      The city has opened a new state-of-the-art library, offering
+      community programs, reading rooms, and digital resources.
+    </p>
+  </div>
+  <div class="card">
+    <h2 class="html-title">Weather Alert: Heavy Rain Expected</h2>
+    <p>
+      Meteorologists warn of heavy rainfall over the weekend, urging
+      residents to take precautions and stay safe.
+    </p>
+  </div>
+  <div class="card">
+    <h2 class="html-title">Art Exhibition Showcases Local Talent</h2>
+    <p>
+      A new art exhibition highlights the work of local artists, featuring
+      paintings, sculptures, and multimedia installations.
+    </p>
+  </div>
+</div>
+  </body>
+</html>

@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Coffee</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+            rel="stylesheet"
+        />
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: 'Open Sans', sans-serif;
+                margin: 0;
+                background-color: rgba(239, 240, 240);
+            }
+
+            .header-coffee {
+                display: flex;
+                height: 70px;
+                justify-content: center;
+                background-color: rgba(67, 40, 28);
+            }
+
+            #logo-caffe {
+                height: 70px;
+                margin-right: 10px;
+            }
+
+            .brand-title {
+                color: rgba(251, 242, 192);
+                align-self: center; /* alinha verticalmente ao centro (usa em container flex)*/
+                font-size: 20px;
+            }
+
+            #logo-caffe {
+                height: 50px;
+                align-self: center;
+            }
+
+            .order-button-container {
+                display: block;
+                text-align: center;
+                height: 100%;
+                width: 100%;
+            }
+
+            .place-order-button {
+                background-color: rgba(222, 185, 147);
+                cursor: pointer;
+                border: none;
+                border-radius: 10px;
+                height: 50px;
+                width: 200px;
+                text-align: center;
+                box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+            }
+
+            .place-order-button:hover {
+                background-color: rgb(182, 127, 73);
+                cursor: pointer;
+                border: none;
+                border-radius: 10px;
+                height: 50px;
+                width: 200px;
+                text-align: center;
+                box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+            }
+
+            .value-container {
+                text-align: center;
+                margin-top: 20px;
+            }
+
+            .value {
+                display: inline-block;
+                text-align: left;
+                margin-top: 20px;
+                padding: 10px;
+            }
+
+            .value h3 {
+                font-weight: normal;
+            }
+
+            .order-itens {
+                margin-top: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header-container">
+            <header class="header-coffee">
+                <img
+                    id="logo-caffe"
+                    src="../../../assets/coffee_masters_logo.png"
+                    alt="coffee-masters-logo"
+                />
+                <h1 class="brand-title">Coffee Masters</h1>
+            </header>
+        </div>
+        <div class="main-container">
+            <main>
+                <div class="order-itens">
+                    <section>
+                        <h2>ITEMS</h2>
+                        <div class="order">
+                            <h2>1X CAPPUCCINO $3.35</h2>
+                            <h2>Life foam</h2>
+                        </div>
+                        <hr />
+                        <div class="order">
+                            <h2>1X CAPPUCCINO $3.85</h2>
+                            <h2>Lite milke</h2>
+                            <h2>Double espresso</h2>
+                        </div>
+                        <hr />
+                        <div class="order">
+                            <h2>1X CAPPUCCINO $2.45</h2>
+                            <h2>Butter</h2>
+                        </div>
+                    </section>
+                </div>
+                <section>
+                    <h2>Teste</h2>
+                </section>
+                <div class="value-container">
+                    <div class="value">
+                        <div class="line-item">
+                            <span>Subtotal:</span>
+                            <span>R$ 00,00</span>
+                        </div>
+
+                        <div class="line-item">
+                            <span>Tax:</span>
+                            <span>R$ 00,00</span>
+                        </div>
+
+                        <div class="line-item total-row">
+                            <span>Total:</span>
+                            <span>R$ 00,00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-button-container">
+                    <button class="place-order-button">Place order</button>
+                </div>
+            </main>
+        </div>
+        <div class="footer-container">
+            <footer></footer>
+        </div>
+    </body>
+</html>
