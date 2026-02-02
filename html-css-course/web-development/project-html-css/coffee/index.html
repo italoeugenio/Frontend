@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Coffee</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+            rel="stylesheet"
+        />
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: 'Open Sans', sans-serif;
+                margin: 0;
+                background-color: #eff0f0;
+                color: #333;
+            }
+
+            header {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                height: 70px;
+                background-color: #43281c;
+            }
+
+            #logo-caffe {
+                height: 50px;
+            }
+
+            .brand-title {
+                color: #fbf2c0;
+                font-size: 20px;
+                font-weight: 600;
+            }
+
+            #logo-caffe {
+                height: 50px;
+                align-self: center;
+            }
+
+            .order-button-container {
+                display: block;
+                text-align: center;
+                height: 100%;
+                width: 100%;
+            }
+
+            .place-order-button {
+                background-color: #deb993;
+                color: #43281c;
+                font-weight: 600;
+                font-size: 16px;
+                cursor: pointer;
+                border: none;
+                border-radius: 10px;
+                height: 50px;
+                width: 200px;
+                box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+                transition:
+                    background-color 0.3s,
+                    transform 0.2s;
+            }
+
+            .place-order-button:hover {
+                background-color: #b67f49;
+                transform: translateY(-2px);
+            }
+
+            .value-container {
+                text-align: center;
+                margin-top: 20px;
+            }
+
+            .value {
+                display: inline-block;
+                text-align: left;
+                margin-top: 20px;
+                padding: 10px;
+                background-color: white;
+                border-radius: 10px;
+                margin-bottom: 10px;
+            }
+
+            .value h3 {
+                font-weight: normal;
+            }
+
+            .order-itens {
+                margin-top: auto;
+                max-width: 200pxs;
+            }
+
+            .order {
+                background-color: #fff;
+                border-radius: 8px;
+                margin-bottom: 15px;
+                padding: 15px 20px;
+            }
+
+            hr {
+                border: none;
+                border-top: 1px solid #ccc;
+                margin: 10px 0;
+            }
+
+            .order-items {
+                max-width: 600px;
+                margin: 20px auto;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <img
+                id="logo-caffe"
+                src="/html-css-course/assets/coffee_masters_logo.png"
+                alt="Coffee Masters Logo"
+            />
+            <h1 class="brand-title">Coffee Masters</h1>
+        </header>
+
+        <main>
+            <section class="order-items">
+                <h2>Orders</h2>
+
+                <div class="order">
+                    <h3>1x Cappuccino - R$3,35</h3>
+                    <p>Life foam</p>
+                </div>
+                <hr />
+
+                <div class="order">
+                    <h3>1x Cappuccino - R$3,85</h3>
+                    <p>Lite milk</p>
+                    <p>Double espresso</p>
+                </div>
+                <hr />
+
+                <div class="order">
+                    <h3>1x Cappuccino - R$2,45</h3>
+                    <p>Butter</p>
+                </div>
+            </section>
+
+            <section class="value-container">
+                <div class="value">
+                    <div class="line-item">
+                        <span>Subtotal:</span>
+                        <span>R$ 00,00</span>
+                    </div>
+                    <div class="line-item">
+                        <span>Tax:</span>
+                        <span>R$ 00,00</span>
+                    </div>
+                    <div class="line-item total-row">
+                        <span>Total:</span>
+                        <span>R$ 00,00</span>
+                    </div>
+                </div>
+            </section>
+
+            <div class="order-button-container">
+                <button class="place-order-button">Place order</button>
+            </div>
+        </main>
+
+        <footer>2026 Coffee Masters</footer>
+    </body>
+</html>
