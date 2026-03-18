@@ -26,9 +26,26 @@ async function addNewDoggo2(){
     const promisse = await fetch(DOG_URL)
     const processedResponse = await promisse.json()
     const img = document.createElement("img")
+    const h1 = document.createElement("h1")
     img.src = processedResponse.message
     img.alt = "Cute Doggo"
-    doggos.appendChild(img)
+    const content = await buscarCEP("72225273") 
+    h1.textContent = JSON.stringify(content, null, 2)
+    doggos.appendChild(h1)
 }
+
+ async function buscarCEP(num){
+     try{
+        const url = "https://viacep.com.br/ws/" + num  + "/json/" 
+        const request = await fetch(url)
+        const response = await request.json()
+        return response
+     } catch (error){
+         console.log("Erro ao buscar cep: ", error)
+     }
+    
+ }
+    
+
 
 button.addEventListener("click", addNewDoggo2)
