@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Lesson 04</title>
+        <style>
+            .pagination {
+                display: flex;
+            }
+
+            .pagination-button {
+                padding-top: 5px;
+                padding-bottom: 5px;
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+
+            .options {
+                margin: 15px;
+            }
+
+            .patter-desing {
+                margin-top: 10px;
+                padding: 10px;
+                background-color: green;
+                color: white;
+                border: none;
+                cursor: pointer;
+            }
+
+            .patter-desing.stretch:hover {
+                margin-top: 10px;
+                padding: 10px;
+                padding-top: 20px;
+                padding-left: 20px;
+                background-color: rgb(218, 255, 11);
+                color: white;
+                border: none;
+            }
+
+            .shandow {
+                background-color: green;
+                color: white;
+                border: none;
+                font-size: 18px;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                padding-left: 16px;
+                padding-right: 16px;
+                cursor: pointer;
+                box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+            }
+
+            .shandow:hover {
+                margin-top: 3px;
+                margin-left: 3px;
+                box-shadow: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="pagination">
+            <button class="pagination-button back">Back</button>
+            <div class="options">
+                <a href="">1</a>
+                <a href="">2</a>
+                <a href="">3</a>
+                <a href="">4</a>
+                <a href="">5</a>
+            </div>
+            <button class="pagination-button next">Next</button>
+        </div>
+
+        <button class="patter-desing stretch">Stretch</button>
+        <br />
+        <button class="patter-desing shandow">Shadown</button>
+        <br />
+        <button class="patter-desing">Stretch</button>
+    </body>
+</html>
