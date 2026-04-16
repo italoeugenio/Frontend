@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Components and Props</title>
+  </head>
+  <body>
+    <div class="target"></div>
+  
+
+    <script src="./react-basic.js"></script>
+    <script src="https://unpkg.com/supersimpledev/react.js"></script>
+    <script src="https://unpkg.com/supersimpledev/react-dom.js"></script>
+    <script src="https://unpkg.com/supersimpledev/babel.js"></script>
+    <!--Javascript compiler  translate jsx to js-->
+    <script type="text/babel">
+
+      function FirstMessage(){
+        return (
+          <p>Hello, welcome to my website</p>
+        )
+      }
+
+      function Buttons(){ 
+        return (
+          <>
+          <button>Login</button>
+          <button>Sing up</button>
+          </>
+        )
+      }
+
+      function App (){
+        return (
+          <div>
+            <FirstMessage />
+            <Buttons />
+          </div>
+        )
+      }
+
+      const target = document.querySelector(".target")
+      ReactDOM.createRoot(target).render(<App />)
+  
+    </script>
+  </body>
+</html>
